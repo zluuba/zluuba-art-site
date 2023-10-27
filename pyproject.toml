@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "zluuba-art-site"
+version = "0.1.0"
+description = "Personal website"
+authors = ["Luybov Nikitina <zluyba.nikitina@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/zluuba/zluuba-art-site"
+packages = [{include = "zluuba_art"}]
+classifiers = [
+    "Environment :: Web Environment",
+    "Programming Language :: Python",
+    "Natural Language :: English",
+    "Framework :: Flask",
+    "Topic :: Internet"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+pytest = "^7.4.3"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

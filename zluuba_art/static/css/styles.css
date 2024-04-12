@@ -1,0 +1,166 @@
+:root {
+    --background-color: #242424;
+    --text-color: #ffffff;
+    --text-shadow-color: #8800ff;
+    --border-color: #555;
+    --links-color: #c9c9c9;
+    --author-name-color: #545454;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/base_bw_small_dark.png);
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: auto;
+}
+
+.logo-container {
+    position: absolute;
+    top: 5vh;
+    left: 16%;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+.logo-container img:hover {
+    filter: brightness(300%);
+}
+
+.content-main {
+    display: grid;
+    grid-template-columns: 65% repeat(auto-fill, 5%);
+    gap: 1px;
+    margin-left: 10%;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% repeat(auto-fill, 0%) 50%;
+    gap: 1px;
+    margin-left: 0;
+}
+
+.intro {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.intro h1 {
+    font-size: 70px;
+    text-shadow: 3px 3px 3px var(--text-shadow-color);
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.intro p {
+    font-size: 32px;
+}
+
+.line {
+    border-left: 3px solid var(--border-color);
+    margin-top: auto;
+    height: 90%;
+}
+
+.links {
+    margin: auto;
+    align-items: left;
+}
+
+.links a {
+    display: block;
+    margin-top: 20%;
+    font-size: 32px;
+
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--links-color);
+}
+
+.links a:hover {
+    text-shadow: 2px 2px 2px var(--text-shadow-color);
+    color: var(--text-color);
+}
+
+.author-name a {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 1vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--author-name-color);
+}
+
+
+@media screen and (max-width: 500px) {
+    .logo-container {
+        display: none;
+    }
+
+    .author-name {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .line {
+        height: 80%;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .author-name {
+        display: none;
+    }
+}
+
+/* about.html */
+
+.text {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.text h1 {
+    font-size: 70px;
+    text-shadow: 3px 3px 3px var(--text-shadow-color);
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.text p {
+    font-size: 32px;
+}
+
+/*
+.btn-group {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.5);
+}
+*/

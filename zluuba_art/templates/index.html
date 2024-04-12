@@ -1,10 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    SON OF A BICH I'M IN!
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="container">
+        <!-- <div class="btn-group">
+            <button class="btn">
+                <img class="home-img" src="static/images/email.png" title="home">
+            </button>
+            <button class="btn">
+                <img class="theme-img" src="static/images/email.png" title="theme">
+            </button>
+        </div> -->
+
+        <div class="logo-container">
+            <a href="/">
+                <img src="static/images/logo-grey.png" alt="Logo">
+            </a>
+        </div>
+        <div class="content-main">
+            <div class="intro">
+                <h1 id="greeting">.</h1>
+                <p>You can call me Lua. <br>
+                    This is my personal website,
+                    where you can find full information about me, my projects, CV, and links. <br>
+                    Nice to see you here, btw.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div class="links">
+                <a href="cv">CV</a>
+                <a href="projects">Projects</a>
+                <a href="about">About Me</a>
+                <a href="links">Links</a>
+            </div>
+        </div>
+
+        <div class="author-name">
+            <a href="https://github.com/zluuba">2024, by zluuba</a>
+        </div>
+
+        <script src="static/js/greeting.js"></script>
+    </div>
+
+{% endblock %}

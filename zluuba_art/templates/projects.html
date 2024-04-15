@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="projects-container">
+    <div class="logo-container">
+        <a href="{{ url_for('main_page') }}">
+            <img src="static/images/logo-grey.png" alt="Logo">
+        </a>
+    </div>
+    <div class="projects-content">
+        <div class="projects-intro">
+            <h1>Projects</h1>
+
+            <div class="project">
+                <a href="projects/zluuba-art">zluuba.art (website)</a>
+                <p>- mastery of DevOps with Nginx, Docker, Python (Flask), JS, CSS, and HTML.</p>
+            </div>
+            <div class="project">
+                <a href="projects/games-of-terminal">Games Of Terminal</a>
+                <p>- collection of classic games for console env (5k lines of pure Python,
+                    featuring a beautifully self-made GUI, an achievement system, and an endless amount of features).</p>
+            </div>
+            <div class="project">
+                <a href="projects/task-manager">Task Manager</a>
+                <p>- basic CRUD web-app developed with Django (includes authorization, authentication,
+                    and several different models with CRUD functionality).</p>
+            </div>
+            <div class="project">
+                <a href="projects/page-analyzer">Page Analyzer</a>
+                <p>- mini web-app built on Flask, BeautifulSoup, and Gunicorn,
+                    designed to analyze specified pages for SEO suitability.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

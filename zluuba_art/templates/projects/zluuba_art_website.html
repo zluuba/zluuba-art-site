@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="projects-container">
+    <div class="projects-header">
+        <div class="projects-title">
+            <h1>zluuba.art</h1>
+        </div>
+        <div class="logo-container projects-logo-container">
+            <a href="{{ url_for('main_page') }}">
+                <img src="{{ url_for('static', filename='images/logo-grey.png') }}" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div class="cv-content">
+        <div class="project">
+            <div class="cv-block">
+                <div class="header-container">
+                    <h2 class="main-sub-header">Project Description</h2>
+                    <div class="cv-line"></div>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="dark">Some project description.</p>
+                </div>
+
+                <br/>
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Screenshots</h2>
+                    <div class="cv-line"></div>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="dark">Some project screenshots.</p>
+                </div>
+
+                <br/>
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Technology</h2>
+                    <div class="cv-line"></div>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="dark">Some technologies description.</p>
+                </div>
+
+                <br/>
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Details</h2>
+                    <div class="cv-line"></div>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="dark">Some technical details.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+</div>
+
+{% endblock %}

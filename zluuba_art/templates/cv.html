@@ -1,0 +1,182 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="projects-container">
+    <div class="projects-header">
+        <div class="projects-title">
+            <h1>CV</h1>
+        </div>
+        <div class="logo-container projects-logo-container">
+            <a href="{{ url_for('main_page') }}">
+                <img src="{{ url_for('static', filename='images/logo-grey.png') }}" alt="Logo">
+            </a>
+        </div>
+    </div>
+    <div class="cv-content">
+        <div class="project">
+            <h1>Luybov Nikitina</h1>
+            <h2 class="cv-sub-header">Backend Python Dev (Junior)</h2>
+            <div class="cv-block">
+                <!--------------------   info   -------------------->
+
+                <p class="plain">Women, 27 y.o., burn May 31, 1996</p>
+                <br/>
+                <p class="plain">City: &nbsp; <em class="light">Nizhny Novgorod, Russia</em></p>
+                <p class="plain">Email: &nbsp; <em class="light">zluyba.nikitina@gmail.com</em></p>
+
+                <!--------------------   stack   -------------------->
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Stack</h2>
+                    <div class="cv-line"></div>
+                </div>
+                <p class="plain">
+                    Proficient In: &nbsp;
+                    <em class="light">Python, Django, Flask, Asyncio, SQL, DBs (PostgreSQL, MySQL), Docker, Nginx</em>
+                </p>
+                <br/>
+                <p class="plain">
+                    Familiar With: &nbsp;
+                    <em class="light">JavaScript, HTML, CSS, </em>
+                    SQLAlchemy, FastAPI, Alembic, Pydantic
+                </p>
+                <p class="plain">Tools Expertise: &nbsp; MyPy, Poetry, Pytest, flake8, Postman, Bootstrap, Git</p>
+
+                <!--------------------   experience   -------------------->
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Experience</h2>
+                    <div class="cv-line"></div>
+                </div>
+
+                <p class="plain">
+                    I've been learning Python and programming in general for
+                    <em class="light">more than 1.5 years</em>.
+                    Currently, I don't have any job experience in that field yet,
+                    but I possess a strong knowledge base and
+                    <em class="light">
+                        extensive experience in building
+                        <a href="{{ url_for('projects_page') }}" target="_blank">pet projects</a>.
+                    </em>
+                </p>
+                <br/>
+                <p class="plain">
+                    For more information about my previous non-programmer job experience, you can view my
+                    <em class="light">
+                        full CV here:
+                        <a href="/" target="_blank">en</a>,
+                        <a href="/" target="_blank">ru</a>.
+                    </em>
+                </p>
+
+                <!--------------------   education   -------------------->
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">Education</h2>
+                    <div class="cv-line"></div>
+                </div>
+
+                <p class="plain">
+                    I've been
+                    <em class="light">learning Python since November 2022</em>.
+                    For the first 11 months, I studied on Hexlet to gain the basics of web development.
+                    After that, I went deeper with Stepik courses covering
+                    <em class="light">Python core, OOP, and asynchronous programming</em>.
+                    Additionally, I've been learning the basics of JavaScript, along with HTML and CSS.
+                    <br/>
+                    After all that, I'll start a
+                    <em class="light">5,000-line project</em>
+                    called 'Games Of Terminal', which will take a few more months.
+                    Currently, I'm working on a
+                    <em class="light">handmade website hosted on a VPS</em>,
+                    with 2 sub-domains for hosting my
+                    web pet projects, and the main domain where you're reading this text.
+                    For more information about my projects, visit
+                    <a href="{{ url_for('projects_page') }}" target="_blank">projects page</a>.
+                </p>
+                <br/>
+
+                <div class="cv-block-inner">
+                    <p class="light plain">
+                        <a href="{{ certs.hexlet_cert_en }}" target="_blank">Python Developer by Hexlet</a>
+                         (10 month, e-certificate, en)
+                    </p>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="light plain">
+                        <a href="{{ certs.stepik_cert_oop_en }}" target="_blank">Python OOP by Stepik</a>
+                         (2 month, e-certificate, en)
+                    </p>
+                </div>
+                <div class="cv-block-inner">
+                    <p class="light plain">
+                        <a href="{{ certs.stepik_cert_async_en }}" target="_blank">Async Python by Stepik</a>
+                         (1 month, e-certificate, en)
+                    </p>
+                </div>
+
+                <!--------------------   about me   -------------------->
+
+                <div class="header-container">
+                    <h2 class="main-sub-header">About Me</h2>
+                    <div class="cv-line"></div>
+                </div>
+
+                <p class="plain">
+                    I genuinely
+                    <em class="light">love programming</em>
+                    , the concept itself.
+                    I can't emphasize enough how much I want to be a pro in Python, learn C, Rust, or Go,
+                    build my own compiler, or a wild-style OS (it even sounds so fun).
+                    I'm a
+                    <em class="light">very ambitious person</em>
+                    since I've finally gotten rid of useless fears and
+                    put in a huge amount of work on my mindset, so I'm not joking about the OS, lmao.
+                    <br/>
+                    <br/>
+                    I know that a deep understanding of the field is crucial, and a master's time is valuable.
+                    I am exceptionally
+                    <em class="light">quick to adapt and prefer a complex task to a simple one</em>.
+                    I understand the significance of skills, and I'm not one to argue with someone who possesses them.
+                    Instead, I prefer
+                    <em class="light">to ask questions</em>
+                    to grasp their viewpoint, express my perspective, and
+                    <em class="light">find the best solution</em>.
+                    <br/>
+                    <br/>
+                    I haven't had the privilege of diving into programming since I was a kid.
+                    I'm 27 years old and just getting started - that's the truth.
+                    It's funny, but I don't feel sad about it because hard skills can be earned through struggle,
+                    but the
+                    <em class="light">scale of thought, stable curiosity, and intellectual ambitions</em>
+                     might not be.
+                    <br/>
+                    <br/>
+                    I'm excited to work with great people, experience
+                    <em class="light">exponential skills growth,
+                    create valuable solutions for humans, and strive to be a good person</em>.
+                    If you need someone like that, I'd be really happy to work with you.
+                    <br/>
+                    <br/>
+                    Oh, I almost forgot about the most critical part, my hobbies.
+                    I love walking,
+                    <em class="light">painting, and playing my little sweet ukulele</em>.
+                    I also love learning languages:
+                    <em class="light">English and Korean</em>
+                    are my favorites.
+                    Although, to be honest, lately I've been spending less time on it because of studying.
+                    <br/>
+                    <br/>
+                    That's all.
+                    <br/>
+                    Thanks for reading, and a big saranghae!
+                </p>
+                <br/>
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+</div>
+
+{% endblock %}

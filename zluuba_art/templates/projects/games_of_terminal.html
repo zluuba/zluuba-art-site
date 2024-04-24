@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="cv-content">
+    <div class="projects-content">
         <div class="project">
             <div class="cv-block">
                 <div class="header-container">
@@ -21,7 +21,24 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project description.</p>
+                    <p class="plain">
+                        Games Of Terminal (aka GOT) -
+                        <em class="light">console-based gaming platform</em>
+                        featuring classic games (Tetris, Minesweeper, Snake, etc.),
+                        with customization options (different
+                        <em class="light">color schemes, skins, modes</em>), an
+                        <em class="light">achievement system</em> and
+                        <em class="light">smart flexibility</em>
+                        (adjusting to the size of the console window, handling resizes).
+                        <br/>
+                        <br/>
+                        GOT is
+                        <em class="light">consisting of 5000+ lines of pure Python, has no dependencies</em>
+                        and can be run on non-GUI systems like Ubuntu Server.
+                        <br/>
+                        <br/>
+                        <a href="https://github.com/zluuba/games-of-terminal" target="_blank">GOT GitHub page</a>.
+                    </p>
                 </div>
 
                 <br/>
@@ -31,17 +48,12 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project screenshots.</p>
-                </div>
-
-                <br/>
-
-                <div class="header-container">
-                    <h2 class="main-sub-header">Technology</h2>
-                    <div class="cv-line"></div>
-                </div>
-                <div class="cv-block-inner">
-                    <p class="dark">Some technologies description.</p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/projects/got/main-menu.png') }}" alt="Games Of Terminal">
+                    </div>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/projects/got/achievements.png') }}" alt="Games Of Terminal">
+                    </div>
                 </div>
 
                 <br/>
@@ -51,7 +63,51 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some technical details.</p>
+                    <p class="plain">
+                        Games Of Terminal (GOT) is a beautiful pet project designed as a
+                        full-screen console-based application, meticulously crafted with
+                        <em class="light">Python's built-in library, Curses</em>.
+                        Guided by the principle of
+                        <em class="light">simplicity-first design</em>,
+                        GOT doesn't have any external dependencies, uses
+                        <em class="light">SQLite3 database</em>
+                        (a fast database found on most computers),
+                        <em class="light">raw SQL queries</em>
+                        and maintaining an open-minded approach.
+
+                        <br/>
+                        <br/>
+
+                        GOT smoothly replicates a simple GUI through its
+                        <em class="light">custom-made graphic</em> logic.
+                        For instance, the achievements board offers two easy-to-use modes: one for navigating
+                        through games with keyboard arrows, and another for exploring achievements within a selected game.
+                        Despite using the same arrows, they perform different functions, offering
+                        <em class="light">flexibility and maximizing space efficiency</em>.
+
+                        <br/>
+                        <br/>
+
+                        In the game window,
+                        <em class="light">parameters are fully flexible</em>.
+                        In some games like Minesweeper, the terminal window's size determines the number of game cells,
+                        while in others like TicTacToe, it adjusts the size of elements.
+                        The app adeptly
+                        <em class="light">handles window resizing</em>,
+                        redrawing as needed.
+                        And let's not forget my favorite feature: the main menu's captivating
+                        <em class="light">nice fire animation</em>,
+                        adding a touch of visual flair to the user experience.
+
+                        <br/>
+                        <br/>
+
+                        GOT has a <em class="light">huge potential</em> (check out the
+                        <a href="https://github.com/zluuba/games-of-terminal/blob/main/docs/upcoming-features.md" target="_blank">
+                            upcoming features file</a>) and exciting plans for the future.
+                        It's my all-time favorite project, blurring the line between
+                        <em class="light">art and entertainment</em>.
+                    </p>
                 </div>
             </div>
         </div>

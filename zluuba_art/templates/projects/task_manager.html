@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="cv-content">
+    <div class="projects-content">
         <div class="project">
             <div class="cv-block">
                 <div class="header-container">
@@ -21,7 +21,25 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project description.</p>
+                    <p class="plain">
+                        Task Manager - is a web application built on the
+                        <em class="light">Django framework</em>
+                        with
+                        <em class="light">Bootstrap</em>
+                        on the frontend.
+                        It features user
+                        <em class="light">registration, login/logout</em>
+                        functionality, and full
+                        <em class="light">CRUD</em>
+                        operations for all application components.
+                        Additionally, the app includes
+                        <em class="light">task filtering and access rights management</em>.
+                        <br/>
+                        <br/>
+                        <a href="https://task-manager.zluuba.art/" target="_blank">Task Manager app</a>
+                        <br/>
+                        <a href="https://github.com/zluuba/task-manager" target="_blank">GitHub page</a>
+                    </p>
                 </div>
 
                 <br/>
@@ -31,17 +49,9 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project screenshots.</p>
-                </div>
-
-                <br/>
-
-                <div class="header-container">
-                    <h2 class="main-sub-header">Technology</h2>
-                    <div class="cv-line"></div>
-                </div>
-                <div class="cv-block-inner">
-                    <p class="dark">Some technologies description.</p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/projects/task-manager/tasks-list.png') }}" alt="Task Manager tasks list page">
+                    </div>
                 </div>
 
                 <br/>
@@ -51,7 +61,45 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some technical details.</p>
+                    <p class="plain">
+                        The backend is built with
+                        <em class="light">Python 3.9 and Django</em>,
+                        leveraging django-bootstrap4 and django-filter for additional functionalities.
+                        <em class="light">Localisation for both Russian and English languages</em>
+                        is included in the GitHub version, although only the English version is available in production.
+                        <br/>
+                        <br/>
+                        On the frontend,
+                        <em class="light">Bootstrap</em>
+                        is used alongside
+                        <em class="light">pure HTML</em>,
+                        making use of numerous templates.
+                        <em class="light">Rollbar</em>
+                        is implemented for real-time tracking of app errors.
+                        Initially hosted on
+                        <em class="light">Railway</em>,
+                        the project had to migrate when free usage ended.
+                        It's now hosted on
+                        <a href="https://task-manager.zluuba.art/" target="_blank">my website's subdomain</a>.
+                        <br/>
+                        <br/>
+                        For local development,
+                        <em class="light">SQLite3</em>
+                        is used, while
+                        <em class="light">PostgreSQL</em>
+                        is employed for production.
+                        Additional tools include
+                        <em class="light">Poetry, flake8, and coverage</em>
+                        for code quality and testing.
+                        <em class="light">CodeClimate</em>
+                        is also integrated for code analysis.
+                        <br/>
+                        <br/>
+                        Overall, the project is
+                        <em class="light">simple and well-structured</em>,
+                        with clean and maintainable code. Feel free to
+                        <a href="https://github.com/zluuba/task-manager/tree/main/task_manager" target="_blank">check it out</a>.
+                    </p>
                 </div>
             </div>
         </div>

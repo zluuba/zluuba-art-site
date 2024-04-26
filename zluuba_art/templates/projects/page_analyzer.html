@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="cv-content">
+    <div class="projects-content">
         <div class="project">
             <div class="cv-block">
                 <div class="header-container">
@@ -21,7 +21,23 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project description.</p>
+                    <p class="plain">
+                        Page Analyzer is a simple
+                        <em class="light">Flask application</em>
+                        designed to execute requests
+                        over the network to
+                        <em class="light">check the availability of websites</em>.
+                        <br/>
+                        It saves information about the returned status code, title, description, and more.
+                        The application maintains a list of checked URLs stored in a local database,
+                        allowing users to click on any URL to view detailed information
+                        and initiate another availability check.
+                        <br/>
+                        <br/>
+                        <a href="https://page-analyzer.zluuba.art/" target="_blank">Page Analyzer app</a>
+                        <br/>
+                        <a href="https://github.com/zluuba/page-analyzer" target="_blank">GitHub page</a>
+                    </p>
                 </div>
 
                 <br/>
@@ -31,17 +47,9 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project screenshots.</p>
-                </div>
-
-                <br/>
-
-                <div class="header-container">
-                    <h2 class="main-sub-header">Technology</h2>
-                    <div class="cv-line"></div>
-                </div>
-                <div class="cv-block-inner">
-                    <p class="dark">Some technologies description.</p>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/projects/page-analyzer/site-page.png') }}" alt="Task Manager tasks list page">
+                    </div>
                 </div>
 
                 <br/>
@@ -51,7 +59,44 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some technical details.</p>
+                    <p class="plain">
+                        This is the simplest app ever: it executes requests over the network and
+                        saves some information in the database.
+                        <em class="light">PostgreSQL is used with psycopg2</em>
+                        as the adapter/wrapper, and raw
+                        <em class="light">SQL queries</em>
+                        are employed.
+                        <em class="light">BeautifulSoup</em>
+                        is utilized for
+                        <em class="light">parsing HTML</em>
+                        and extracting information such as main header, title, and description of the page.
+                        <br/>
+                        <br/>
+                        The app also includes
+                        <em class="light">validation and flash messages</em>
+                        like "Incorrect URL" or "Page successfully added" for a better user experience.
+                        For the frontend,
+                        <em class="light">HTML with Bootstrap</em>
+                        styles is used.
+                        Initially hosted on
+                        <em class="light">Railway</em>,
+                        the project was migrated to
+                        <a href="https://task-manager.zluuba.art/" target="_blank">my website's subdomain</a>
+                        after Railway changed its policies.
+                        <br/>
+                        <br/>
+                        The app is
+                        <em class="light">small and friendly</em>,
+                        like a little kitten.
+                        And of course, it's
+                        <em class="light">well-tested with Pytest</em>,
+                        checked for code quality with
+                        <em class="light">CodeCoverage</em>
+                        and complies with the
+                        <em class="light">PEP8 standards</em>,
+                        which was checked with
+                        <em class="light">flake8</em>.
+                    </p>
                 </div>
             </div>
         </div>

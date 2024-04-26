@@ -13,7 +13,7 @@
             </a>
         </div>
     </div>
-    <div class="cv-content">
+    <div class="projects-content">
         <div class="project">
             <div class="cv-block">
                 <div class="header-container">
@@ -21,27 +21,52 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project description.</p>
+                    <p class="plain">
+                        zluuba.art is an elegant website powered by
+                        <em class="light">Flask on the backend</em>
+                        and adorned with clean
+                        <em class="light">HTML, CSS, and a few JS scripts on the frontend</em>.
+                        Hosted on a VPS, I personally set up and fine-tuned every detail, leveraging
+                        <em class="light">Nginx and Docker </em>
+                        to ensure seamless performance (to the extent possible) and additionally run all of my
+                        web pet projects on
+                        <em class="light">subdomains</em>.
+                        <br/>
+                        <br/>
+                        This project is the result of
+                        <em class="light">blending Fullstack dev and DevOps roles</em>,
+                        which was both fun and quite challenging.
+                        <br/>
+                        <br/>
+                        Main website and pet projects on subdomains:
+                        <br/>
+                        <a href="https://zluuba.art" target="_blank">zluuba.art</a>
+                        <br/>
+                        <a href="https://task-manager.zluuba.art/" target="_blank">task-manager.zluuba.art</a>
+                        <br/>
+                        <a href="https://page-analyzer.zluuba.art/" target="_blank">page-analyzer.zluuba.art</a>
+                    </p>
                 </div>
 
                 <br/>
 
                 <div class="header-container">
-                    <h2 class="main-sub-header">Screenshots</h2>
+                    <h2 class="main-sub-header">Technologies</h2>
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some project screenshots.</p>
-                </div>
-
-                <br/>
-
-                <div class="header-container">
-                    <h2 class="main-sub-header">Technology</h2>
-                    <div class="cv-line"></div>
-                </div>
-                <div class="cv-block-inner">
-                    <p class="dark">Some technologies description.</p>
+                    <p class="plain">
+                        I used a VPS with Ubuntu 22.04,
+                        along with a main domain and two subdomains for pet projects.
+                        Implemented
+                        <em class="light">Let's Encrypt SSL certificates</em>
+                        for secure connections.
+                        Utilized
+                        <em class="light">three Docker containers on different ports, managed by Nginx</em>
+                        serving as a web server, which directs traffic to different domains.
+                        The backend was developed with Flask, and frontend design was handled with HTML and CSS.
+                        I also incorporated a bit of JS through scripts.
+                    </p>
                 </div>
 
                 <br/>
@@ -51,7 +76,44 @@
                     <div class="cv-line"></div>
                 </div>
                 <div class="cv-block-inner">
-                    <p class="dark">Some technical details.</p>
+                    <p class="plain">
+<!--                        Pain of configuring Nginx for the first time (with unnecessary usage of proxy file),-->
+<!--                        'DNS Probe Finished' error when setting up subdomains, missed lunches by setting up databases via-->
+<!--                        docker-compose, stumbling over broken pipes in SSH connections,-->
+<!--                        sadness about div that don't want to be centered, and other enemies what I fight by building this website,-->
+<!--                        and cannot describe, because the brain is blocking traumatic adventures.-->
+<!--                        Make sure, that now this site is secure, fast, don't need you cookies, adapted for the mobile phones and-->
+<!--                        will be running till the end of the Internet.-->
+                        Building this website wasn't without its challenges.
+                        <br/>
+                        From grappling with
+                        <em class="light">configuring Nginx</em>
+                        for the first time (and the unnecessary use of
+                        <em class="light">proxy</em>
+                        files), to battling the dreaded 'DNS Probe Finished' error while
+                        <em class="light">setting up subdomains</em>.
+                        There were missed lunches spent troubleshooting databases via
+                        <em class="light">docker-compose</em>,
+                        and frustrating moments spent dealing with broken pipes in
+                        <em class="light">SSH connections</em>.
+                        Let's not forget the exasperating struggle to center that stubborn div element.
+                        <br/>
+                        <br/>
+                        Despite these obstacles, the site now stands strong.
+                        It's secure, lightning-fast, perfectly optimized for mobile phones, and
+                        <em class="light">doesn't need your cookies</em>.
+                        Make sure, this website will be here for as long as the Internet exists*.
+                        <br/>
+                        <br/>
+                        <em class="small-dark">
+                            * - actually, no, because this system requires automation with bash scripts, systemd and so on.
+                            If my sweet domain were currently targeted in a DDoS attack,
+                            it would be dead until I manually bring the site up again.
+                            However, as always, I'm already on the path to a brighter future and will
+                            address these issues in the coming months.
+                            So please, refrain from attacking this site until this notice is removed. Thanks.
+                        </em>
+                    </p>
                 </div>
             </div>
         </div>

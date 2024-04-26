@@ -288,6 +288,11 @@ footer {
     color: var(--grey-color-v2);
 }
 
+.cv-block .small-dark {
+    font-size: 16px;
+    color: var(--dark-grey-color);
+}
+
 .cv-block .plain a {
     text-decoration: none;
     white-space: nowrap;

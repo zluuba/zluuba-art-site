@@ -10,13 +10,9 @@
     --grey-color-v2: #9c9c9c;
     --dark-grey-color: #545454;
 
-    --purple-color: #9b74e8;
-    --soft-purple-color: #9b74e8;
-    --strong-purple-color: #8800ff;
-
-    --green-text-color: #0b9c32;
-
-    --exp-color: #ded3f0;
+    --grey-n-purple-color: #8f8cad;
+    --faded-purple-color: #9c99bf;
+    --dark-purple-color: #6c4ccf;
 }
 
 @font-face {
@@ -30,19 +26,7 @@
     src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
     font-weight: normal;
 }
-/*
-@font-face {
-    font-family: "Open Sans Light";
-    src: url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
-    font-weight: lighter;
-}
 
-@font-face {
-    font-family: "Open Sans Regular";
-    src: url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
-    font-weight: normal;
-}
-*/
 body {
     margin: 0;
     font-family: Roboto Light;
@@ -94,7 +78,7 @@ body {
     white-space: nowrap;
     font-size: 70px;
     color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--strong-purple-color);
+    text-shadow: 3px 3px 3px var(--dark-purple-color);
 }
 
 .intro p {
@@ -120,11 +104,11 @@ body {
     white-space: nowrap;
     text-decoration: none;
     color: var(--white-color-v1);
-    text-shadow: 1px 1px 1px var(--strong-purple-color);
+    text-shadow: 1px 1px 1px var(--dark-purple-color);
 }
 
 .links a:hover {
-    color: var(--soft-purple-color);
+    color: var(--faded-purple-color);
     text-shadow: 3px 3px 3px var(--dark-grey-color);
 }
 
@@ -180,7 +164,6 @@ footer {
     white-space: nowrap;
     font-size: 65px;
     color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--strong-purple-color);
 }
 
 .projects-logo-container {
@@ -199,7 +182,6 @@ footer {
     margin-top: 0;
     font-size: 45px;
     color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--strong-purple-color);
 }
 
 .project {
@@ -214,7 +196,7 @@ footer {
     font-size: 32px;
     white-space: nowrap;
     text-decoration: none;
-    color: var(--soft-purple-color);
+    color: var(--faded-purple-color);
     text-shadow: 3px 3px 3px var(--dark-grey-color);
 }
 
@@ -228,14 +210,40 @@ footer {
     color: var(--grey-color);
 }
 
+.project-header {
+    display: column;
+    width: 100%;
+    padding-top: 3vh;
+    padding-bottom: 3svh;
+}
+
+.project-header a {
+    margin: 0;
+    font-size: 32px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--white-color-v1);
+    text-shadow: 2px 2px 2px var(--dark-purple-color);
+}
+
+.project-header a:hover {
+    color: var(--faded-purple-color);
+    text-shadow: 3px 3px 3px var(--dark-grey-color);
+}
+
+.project-header p {
+    margin: 0;
+    font-size: 25px;
+    color: var(--grey-color-v2);
+}
+
 
 /* ---------------------------------------------------------  cv page  --------- */
 
 
 .cv-sub-header {
     font-size: 35px;
-    color: var(--soft-purple-color);
-    text-shadow: 3px 3px 3px var(--dark-grey-color);
+    color: var(--faded-purple-color);
 }
 
 .cv-block {
@@ -254,7 +262,6 @@ footer {
     margin-bottom: 1%;
     font-size: 28px;
     color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--strong-purple-color);
 }
 
 .cv-block-inner {
@@ -298,8 +305,7 @@ footer {
     white-space: nowrap;
     text-shadow: none;
     font-size: 22px;
-    color: var(--purple-color);
-    text-shadow: 1px 1px 1px var(--dark-grey-color);
+    color: var(--grey-n-purple-color);
 }
 
 .cv-block .header-container {

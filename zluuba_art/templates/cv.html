@@ -62,12 +62,17 @@
                 </p>
                 <br/>
                 <p class="plain">
-                    For more information about my previous non-programmer job experience, you can view my
-                    <em class="light">
-                        full CV here:
-                        <a href="/" target="_blank">en</a>,
-                        <a href="/" target="_blank">ru</a>.
-                    </em>
+                    For a brief
+                    <em class="light">PDF CV</em>,
+                    visit the following links:
+                    <a href="{{ url_for('static', filename='docs/cv-junior-python-nikitina-luybov-en.pdf') }}" target="_blank">en</a>,
+                    <a href="{{ url_for('static', filename='docs/cv-junior-python-nikitina-luybov-ru.pdf') }}" target="_blank">ru</a>.
+                    <br/>
+                    For my complete
+                    <em class="light">CV including job experience</em>,
+                    access the full document here:
+                    <a href="{{ url_for('static', filename='docs/cv-junior-python-nikitina-luybov-en-full.pdf') }}" target="_blank">en</a>,
+                    <a href="{{ url_for('static', filename='docs/cv-junior-python-nikitina-luybov-ru-full.pdf') }}" target="_blank">ru</a>.
                 </p>
 
                 <!--------------------   education   -------------------->

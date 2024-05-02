@@ -13,3 +13,6 @@ coverage.xml
 # tests cache
 .pytest_cache/
 __pycache__
+
+# some local files
+zluuba_art/static/images/others/

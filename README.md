@@ -1,13 +1,13 @@
 # zluuba.art
 
-This is my personal website with complete information about me. <br/>
-Projects, skills, links - all in one place. <br/>
-Welcome: [zluuba.art](https://zluuba.art)
+Just a personal website. <br/>
+[www.zluuba.art](https://zluuba.art)
 
 To Do:
-- Personal Blog on blog.zluuba.art (with API and ability to all posts remotely - not via this repo)
+- Personal Blog on blog.zluuba.art (add ability to publish posts remotely)
 - Bookshelf (books I've read)
 
 
-Good example:
-- https://rakhim.org/
+[//]: # (Good example:)
+
+[//]: # (- https://rakhim.org/)

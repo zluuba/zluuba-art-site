@@ -4,8 +4,9 @@ Just a personal website. <br/>
 [www.zluuba.art](https://zluuba.art)
 
 To Do:
-- Personal Blog on blog.zluuba.art (add ability to publish posts remotely)
-- Bookshelf (books I've read)
+- fix style names and remove unused styles;
+- add personal blog on blog.zluuba.art (include the ability to publish posts remotely);
+- add bookshelf (listing books I've read);
 
 
 [//]: # (Good example:)

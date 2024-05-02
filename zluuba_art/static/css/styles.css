@@ -78,7 +78,7 @@ body {
     white-space: nowrap;
     font-size: 70px;
     color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--dark-purple-color);
+    text-shadow: 2px 2px 2px var(--dark-purple-color);
 }
 
 .intro p {
@@ -109,7 +109,7 @@ body {
 
 .links a:hover {
     color: var(--faded-purple-color);
-    text-shadow: 3px 3px 3px var(--dark-grey-color);
+    text-shadow: 2px 2px 2px var(--dark-grey-color);
 }
 
 footer {
@@ -121,21 +121,6 @@ footer {
     text-decoration: none;
     white-space: nowrap;
     color: var(--dark-grey-color);
-}
-
-@media screen and (max-width: 500px) {
-    footer,
-    .logo-container{
-        display: none;
-    }
-}
-
-@media screen and (max-height: 600px) {
-    footer,
-    .line,
-    .logo-container {
-        display: none;
-    }
 }
 
 
@@ -197,7 +182,7 @@ footer {
     white-space: nowrap;
     text-decoration: none;
     color: var(--faded-purple-color);
-    text-shadow: 3px 3px 3px var(--dark-grey-color);
+    text-shadow: 2px 2px 2px var(--dark-grey-color);
 }
 
 .project a:hover {
@@ -228,7 +213,7 @@ footer {
 
 .project-header a:hover {
     color: var(--faded-purple-color);
-    text-shadow: 3px 3px 3px var(--dark-grey-color);
+    text-shadow: 2px 2px 2px var(--dark-grey-color);
 }
 
 .project-header p {
@@ -334,8 +319,13 @@ footer {
     white-space: nowrap;
     text-decoration: none;
     font-size: 30px;
-    color: var(--white-color);
-    text-shadow: 3px 3px 3px var(--strong-purple-color);
+    color: var(--white-color-v1);
+    text-shadow: 2px 2px 2px var(--dark-purple-color);
+}
+
+.error-page-intro a:hover {
+    color: var(--faded-purple-color);
+    text-shadow: 2px 2px 2px var(--dark-grey-color);
 }
 
 .error-page-intro p {
@@ -343,16 +333,97 @@ footer {
     color: var(--grey-color);
 }
 
-/*
-.btn-group {
-    position: absolute;
-    top: 15%;
-    right: 20%;
-}
 
-.btn {
-    border: none;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.5);
+/* ---------------------------------------------------------  mobile version  --------- */
+
+@media screen and (max-width: 705px),
+       screen and (max-height: 600px) {
+    /* -----------------------------------------------------  home, links  --------- */
+    .container {
+        display: block;
+        align-items: left;
+        height: 100%;
+        margin: 3vh 3vh;
+    }
+
+    .logo-container {
+        margin: auto;
+    }
+
+    .content-main {
+        display: block;
+        grid-template-columns: none;
+        height: 75vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    .intro {
+        margin: auto;
+        transform: translateY(20%);
+    }
+
+    .intro h1 {
+        font-size: 60px;
+    }
+
+    .intro p {
+        font-size: 28px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .links {
+        margin: auto;
+        transform: translateY(50%);
+    }
+
+    .links a {
+        display: flex;
+        font-size: 28px;
+
+        margin: 1vh auto;
+    }
+
+    footer {
+        margin: auto;
+    }
+
+    /* -----------------------------------------------------  cv, projects  --------- */
+
+    .projects-container {
+        margin: 3vh 3vh;
+    }
+
+    .projects-header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        margin: auto;
+    }
+
+    .projects-title {
+        margin: auto 0;
+    }
+
+    .projects-title h1 {
+        margin: 2vh auto;
+        padding-bottom: 3vh;
+        font-size: 60px;
+        white-space: normal;
+    }
+
+    .projects-logo-container {
+        margin: auto 0;
+    }
+
+    .projects-content {
+        margin: auto;
+    }
+
+    .cv-block-inner {
+        display: block;
+    }
 }
-*/

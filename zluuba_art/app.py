@@ -11,12 +11,7 @@ def main_page():
 
 @app.get('/cv')
 def cv_page():
-    certificates_urls = {
-        'hexlet_cert_en': 'static/docs/hexlet-cert-en.pdf',
-        'stepik_cert_oop_en': 'static/docs/stepik-cert-oop-en.pdf',
-        'stepik_cert_async_en': 'static/docs/stepik-cert-async-en.pdf'
-    }
-    return render_template('cv.html', certs=certificates_urls)
+    return render_template('cv.html')
 
 
 @app.get('/projects')
@@ -47,11 +42,6 @@ def page_analyzer_project():
 @app.get('/links')
 def links_page():
     return render_template('links.html')
-
-
-@app.get('/505')
-def five_o_five_page():
-    return render_template('internal_server_error.html')
 
 
 @app.errorhandler(404)

@@ -1,0 +1,13 @@
+version: '2.17'
+
+services:
+  web:
+    build: .
+    container_name: website
+    restart: on-failure
+    ports:
+        - "3000:3000"
+    command: "poetry run gunicorn -w 5 -b 0.0.0.0:3000 zluuba_art:app"
+
+volumes:
+  postgres_data:

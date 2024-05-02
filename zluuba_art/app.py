@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 
 
 app = Flask(__name__)
@@ -42,6 +42,11 @@ def page_analyzer_project():
 @app.get('/links')
 def links_page():
     return render_template('links.html')
+
+
+@app.get('/robots.txt')
+def robots_page():
+    return send_from_directory(app.static_folder, 'robots.txt')
 
 
 @app.errorhandler(404)

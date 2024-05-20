@@ -1,4 +1,5 @@
-from flask import Flask, render_template, send_from_directory
+from flask import abort, Flask, render_template, send_from_directory
+from .constants import PET_PROJECTS
 
 
 app = Flask(__name__)
@@ -9,42 +10,32 @@ def main_page():
     return render_template('index.html')
 
 
-@app.get('/cv')
+@app.route('/cv')
 def cv_page():
     return render_template('cv.html')
 
 
-@app.get('/projects')
+@app.route('/projects')
 def projects_page():
     return render_template('pet_projects.html')
 
 
-@app.get('/projects/zluuba-art-website')
-def zluuba_art_website_project():
-    return render_template('projects/zluuba_art_website.html')
+@app.route('/projects/<project>')
+def project_page(project):
+    project_html_page = PET_PROJECTS.get(project)
+
+    if not project_html_page:
+        abort(404)
+
+    return render_template(f'projects/{project_html_page}')
 
 
-@app.get('/projects/games-of-terminal')
-def games_of_terminal_project():
-    return render_template('projects/games_of_terminal.html')
-
-
-@app.get('/projects/task-manager')
-def task_manager_project():
-    return render_template('projects/task_manager.html')
-
-
-@app.get('/projects/page-analyzer')
-def page_analyzer_project():
-    return render_template('projects/page_analyzer.html')
-
-
-@app.get('/links')
+@app.route('/links')
 def links_page():
     return render_template('links.html')
 
 
-@app.get('/robots.txt')
+@app.route('/robots.txt')
 def robots_page():
     return send_from_directory(app.static_folder, 'robots.txt')
 

@@ -1,5 +1,7 @@
-from flask import abort, Flask, render_template, send_from_directory
+from flask import abort, Flask, request, render_template, send_from_directory
+
 from .constants import PET_PROJECTS
+from .logger import log
 
 
 app = Flask(__name__)
@@ -7,6 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def main_page():
+    log(request)
     return render_template('index.html')
 
 

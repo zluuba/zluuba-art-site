@@ -427,3 +427,43 @@ footer {
         display: block;
     }
 }
+
+/* -----------------------------------------------------  collision  --------- */
+/*
+    The footer's behavior on small displays is uncertain in index.html and links.html,
+    so it is temporarily turned off until the website is rebuilt.
+*/
+
+@media screen and (max-width: 400px),
+       screen and (max-height: 700px) {
+
+    .main-footer {
+        display: none;
+    }
+}
+
+/*
+    Links in index.html and links.html collide with the intro paragraph block,
+    so we manually increase the distance between them until the website is rebuilt.
+*/
+
+@media screen and (max-width: 365px) {
+
+    .content-main .links {
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .links a {
+        font-size: 22px;
+    }
+}

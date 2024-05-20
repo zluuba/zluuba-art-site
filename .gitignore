@@ -6,6 +6,9 @@
 .venv/
 .env
 
+# logs
+*.log
+
 # test coverage files
 .coverage
 coverage.xml

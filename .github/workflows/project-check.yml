@@ -17,4 +17,4 @@ jobs:
       - name: Type Hints check
         run: |
           pip install mypy
-          mypy zluuba_art
+          mypy zluuba_art --config-file mypy.ini

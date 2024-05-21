@@ -1,5 +1,7 @@
 # zluuba.art
 
+[![project-check](https://github.com/zluuba/zluuba-art-site/actions/workflows/project-check.yml/badge.svg)](https://github.com/zluuba/zluuba-art-site/actions/workflows/project-check.yml)
+
 Simple personal website. <br/>
 [www.zluuba.art](https://zluuba.art)
 

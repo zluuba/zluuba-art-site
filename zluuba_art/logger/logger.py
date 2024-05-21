@@ -1,10 +1,10 @@
 from flask import Request
 from logging import Logger
 from pathlib import Path
-import requests
-from typing import Union
+from requests import get, RequestException
+from typing import Union, Optional, Any
 
-from .configuration import get_logger
+from zluuba_art.logger.configuration import get_logger
 
 
 BASE_DIR = Path(__file__).parents[1]
@@ -34,7 +34,7 @@ def get_users_statistic_log_msg(request: Request) -> str:
     user_agent = request.headers.get('User-Agent')
 
     try:
-        response = requests.get(f'https://ipapi.co/{ip_address}/json/')
+        response = get(f'https://ipapi.co/{ip_address}/json/')
         response.raise_for_status()
         geo_data = response.json()
 
@@ -42,7 +42,7 @@ def get_users_statistic_log_msg(request: Request) -> str:
         city = geo_data.get('city', 'Unknown')
         region = geo_data.get('region', 'Unknown')
 
-    except requests.RequestException:
+    except RequestException:
         country = city = region = 'Unknown'
 
     return (f'Visit from {ip_address} - Country: {country}, '
@@ -63,18 +63,19 @@ def get_server_error_log_msg(error: Exception) -> str:
 
 def log(log_type: str,
         data: Union[Request, Exception],
-        logger: Logger = None,
+        logger: Optional[Logger] = None,
         log_level: str = 'info'):
     """
     Logs a message based on the log type and data provided.
 
     :param log_type: Type of log ('users_statistic' or 'server_error').
-    :param data: Data to log (Request for 'users_statistic' or Exception for 'server_error').
+    :param data: Data to log (Request for 'users_statistic' or
+                 Exception for 'server_error').
     :param logger: Logger instance to use.
     :param log_level: Log level as a string.
     """
 
-    log_msg_funcs = {
+    log_msg_funcs: dict[str, Any] = {
         'users_statistic': {
             'log_msg_func': get_users_statistic_log_msg,
             'logger': users_logger,

@@ -3,6 +3,7 @@ from logging import (
     DEBUG, INFO, WARNING, ERROR, CRITICAL,
 )
 from os import path
+from pathlib import Path, PosixPath
 from typing import Union
 
 
@@ -21,7 +22,7 @@ LEVELS = {
 
 
 def get_logger(filename: str,
-               basedir: Union[str, path],
+               basedir: Union[Path, PosixPath],
                name: str = DEFAULT_NAME,
                log_level: str = DEFAULT_LEVEL) -> Logger:
     """

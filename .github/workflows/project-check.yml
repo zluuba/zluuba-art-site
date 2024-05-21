@@ -1,0 +1,21 @@
+name: project-check
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Linter check
+        run: |
+          pip install flake8
+          flake8 zluuba_art
+      - name: Type Hints check
+        run: |
+          pip install mypy
+          mypy --install-types
+          mypy zluuba_art

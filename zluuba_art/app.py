@@ -11,10 +11,12 @@ from zluuba_art.error_handlers import handle_404, handle_generic_exception
 # from zluuba_art.logger.logger import log
 
 
-class HomeView(View):
+class BaseView(View):
     methods = ['GET']
     init_every_request = False
 
+
+class HomeView(BaseView):
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """
         Handles the main page route, logs user statistics,
@@ -27,10 +29,7 @@ class HomeView(View):
         return render_template('index.html')
 
 
-class CVPageView(View):
-    methods = ['GET']
-    init_every_request = False
-
+class CVPageView(BaseView):
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """
         Renders the cv page.
@@ -41,10 +40,7 @@ class CVPageView(View):
         return render_template('cv.html')
 
 
-class ProjectsPageView(View):
-    methods = ['GET']
-    init_every_request = False
-
+class ProjectsPageView(BaseView):
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """
         Renders the pet projects page.
@@ -55,10 +51,7 @@ class ProjectsPageView(View):
         return render_template('pet_projects.html')
 
 
-class ProjectPageView(View):
-    methods = ['GET']
-    init_every_request = False
-
+class ProjectPageView(BaseView):
     def dispatch_request(self, *args: Any, **kwargs: Any
                          ) -> ft.ResponseReturnValue:
         """
@@ -76,10 +69,7 @@ class ProjectPageView(View):
         return render_template(f'projects/{project_html_page}')
 
 
-class LinksPageView(View):
-    methods = ['GET']
-    init_every_request = False
-
+class LinksPageView(BaseView):
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """
         Renders the links page.
@@ -90,10 +80,7 @@ class LinksPageView(View):
         return render_template('links.html')
 
 
-class RobotsPageView(View):
-    methods = ['GET']
-    init_every_request = False
-
+class RobotsPageView(BaseView):
     def dispatch_request(self) -> ft.ResponseReturnValue:
         """
         Serves the robots.txt file.

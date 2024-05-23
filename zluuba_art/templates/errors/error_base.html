@@ -10,11 +10,8 @@
     </div>
     <div class="content-main">
         <main class="intro error-page-intro">
-            <h1>Oops, something went wrong</h1>
-            <p>
-                Our server is doing its best, but it seems a bit tired right now. <br>
-                Please refresh the page or try again later.
-            </p>
+            {% block error_body %}
+            {% endblock %}
             <a href="{{ url_for('main_page') }}">Go Home</a>
         </main>
     </div>

@@ -4,10 +4,8 @@
 
     --white-color: #e4e4e4;
     --white-color-v1: #ebebeb;
-    --white-color-v2: #d4d4d4;
     --grey-color: #e3e3e3;
-    --grey-color-v1: #c9c9c9;
-    --grey-color-v2: #9c9c9c;
+    --grey-color-v1: #9c9c9c;
     --dark-grey-color: #545454;
 
     --grey-n-purple-color: #8f8cad;
@@ -219,7 +217,7 @@ footer {
 .project-header p {
     margin: 0;
     font-size: 25px;
-    color: var(--grey-color-v2);
+    color: var(--grey-color-v1);
 }
 
 
@@ -272,7 +270,7 @@ footer {
 .cv-block .plain {
     display: block;
     font-size: 22px;
-    color: var(--grey-color-v2);
+    color: var(--grey-color-v1);
 }
 
 .cv-block .small-dark {

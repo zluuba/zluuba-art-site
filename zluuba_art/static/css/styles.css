@@ -264,11 +264,6 @@ footer {
     height: auto;
 }
 
-.cv-block .dark {
-    margin-right: 1rem;
-    color: var(--grey-color-v2);
-}
-
 .cv-block .light {
     font-style: normal;
     color: var(--white-color-v1);

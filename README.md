@@ -12,7 +12,14 @@ To Do:
 - add bookshelf (listing books I've read);
 
 
-<br/>
+## Run Docker
+```commandline
+# create image
+docker build -t 'website' .
+
+# run image
+docker run -p 8080:8080 'website'
+```
 
 
 ## Big Plans

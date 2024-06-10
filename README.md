@@ -17,7 +17,7 @@ To Do:
 docker build -t 'website' .
 
 # run image
-docker run -p 8080:8080 'website'
+docker run -p 3000:3000 'website'
 ```
 
 

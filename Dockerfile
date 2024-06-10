@@ -12,4 +12,4 @@ RUN pip install --upgrade pip && \
     poetry config virtualenvs.create false && \
     poetry install --no-dev
 
-CMD ["poetry", "run", "gunicorn", "-w", "5", "-b", "0.0.0.0:8080", "zluuba_art:app"]
+CMD ["poetry", "run", "gunicorn", "-w", "5", "-b", "0.0.0.0:3000", "zluuba_art:app"]

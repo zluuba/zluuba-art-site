@@ -19,3 +19,7 @@ jobs:
           pip install mypy
           pip install types-requests
           mypy zluuba_art --config-file mypy.ini
+      - name: Run Tests
+        run: |
+          pip install pytest
+          pytest

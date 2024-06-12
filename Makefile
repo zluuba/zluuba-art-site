@@ -15,6 +15,10 @@ typing:
 	poetry run mypy --install-types
 	poetry run mypy zluuba_art
 
+test:
+	poetry run pytest
+
 full-check:
 	make linter
 	make typing
+	make test

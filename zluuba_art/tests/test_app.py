@@ -10,7 +10,7 @@ def test_cv_page(client):
 
     assert response.status_code == 200
     assert b'CV' in response.data
-    assert b'zluyba.nikitina@gmail.com' in response.data
+    assert b'Luybov Nikitina' in response.data
 
 
 def test_projects_page(client):

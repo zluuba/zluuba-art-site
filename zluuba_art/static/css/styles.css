@@ -8,9 +8,8 @@
     --grey-color-v1: #9c9c9c;
     --dark-grey-color: #545454;
 
-    --grey-n-purple-color: #8f8cad;
-    --faded-purple-color: #9c99bf;
-    --dark-purple-color: #6c4ccf;
+    --dark-blue-color: #2a2dd1;
+    --soft-dark-blue-color: #5152a8;
 }
 
 @font-face {
@@ -76,7 +75,7 @@ body {
     white-space: nowrap;
     font-size: 70px;
     color: var(--white-color);
-    text-shadow: 2px 2px 2px var(--dark-purple-color);
+    text-shadow: 2px 2px 2px var(--dark-blue-color);
 }
 
 .intro p {
@@ -102,12 +101,11 @@ body {
     white-space: nowrap;
     text-decoration: none;
     color: var(--white-color-v1);
-    text-shadow: 1px 1px 1px var(--dark-purple-color);
+    text-shadow: 1px 1px 1px var(--dark-blue-color);
 }
 
 .links a:hover {
-    color: var(--faded-purple-color);
-    text-shadow: 2px 2px 2px var(--dark-grey-color);
+    filter: brightness(300%);
 }
 
 footer {
@@ -179,8 +177,8 @@ footer {
     font-size: 32px;
     white-space: nowrap;
     text-decoration: none;
-    color: var(--faded-purple-color);
-    text-shadow: 2px 2px 2px var(--dark-grey-color);
+    color: var(--dark-blue-color);
+    text-shadow: 1px 1px 1px var(--dark-grey-color);
 }
 
 .project a:hover {
@@ -206,12 +204,11 @@ footer {
     white-space: nowrap;
     text-decoration: none;
     color: var(--white-color-v1);
-    text-shadow: 2px 2px 2px var(--dark-purple-color);
+    text-shadow: 1px 1px 1px var(--dark-blue-color);
 }
 
 .project-header a:hover {
-    color: var(--faded-purple-color);
-    text-shadow: 2px 2px 2px var(--dark-grey-color);
+    filter: brightness(300%);
 }
 
 .project-header p {
@@ -224,9 +221,14 @@ footer {
 /* ---------------------------------------------------------  cv page  --------- */
 
 
+.cv-header {
+    margin: auto;
+}
+
 .cv-sub-header {
     font-size: 35px;
-    color: var(--faded-purple-color);
+    margin-top: 0;
+    color: var(--grey-color-v1);
 }
 
 .cv-block {
@@ -283,7 +285,7 @@ footer {
     white-space: nowrap;
     text-shadow: none;
     font-size: 22px;
-    color: var(--grey-n-purple-color);
+    color: var(--soft-dark-blue-color);
 }
 
 .cv-block .header-container {
@@ -313,12 +315,11 @@ footer {
     text-decoration: none;
     font-size: 30px;
     color: var(--white-color-v1);
-    text-shadow: 2px 2px 2px var(--dark-purple-color);
+    text-shadow: 2px 2px 2px var(--dark-blue-color);
 }
 
 .error-page-intro a:hover {
-    color: var(--faded-purple-color);
-    text-shadow: 2px 2px 2px var(--dark-grey-color);
+    filter: brightness(300%);
 }
 
 .error-page-intro p {

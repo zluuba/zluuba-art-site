@@ -1,9 +1,9 @@
-# zluuba.art
+# zluuba.ru
 
 [![project-check](https://github.com/zluuba/zluuba-art-site/actions/workflows/project-check.yml/badge.svg)](https://github.com/zluuba/zluuba-art-site/actions/workflows/project-check.yml)
 
 Simple personal website. <br/>
-[www.zluuba.art](https://zluuba.art)
+[www.zluuba.ru](https://zluuba.ru)
 
 
 To Do:
@@ -21,10 +21,9 @@ docker run -p 3000:3000 'website'
 ```
 
 
-## Big Plans
+## Plans
 
-.art is not just a nice GTLD, it's the purpose of the website.  
-So I want to make it right and rebuild the current website into a beautiful piece of art.
+I want to make it right and rebuild the current website into a beautiful piece of art.
 
 Functionality:
 - admin panel for blog posts (markdown and html support);
@@ -36,7 +35,6 @@ Design:
 - add patterns and colors (not too much, not too colorful);
 
 DevOps:
-- bash script for SSL recreation (3 mos. circle);
 - tools for quick deployment (including fast updates);
 
 Tools:
